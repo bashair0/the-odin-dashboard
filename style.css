@@ -1,0 +1,150 @@
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey-1: hsl(214, 32%, 91%);
+  --clr-grey-2: hsl(0, 0%, 39%);
+  --clr-black: hsl(0, 0%, 20%);
+  --clr-blue: hsl(201, 79%, 46%);
+  --clr-orange: hsl(42, 87%, 55%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo img {
+  height: 50px;
+}
+
+ul li {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+li ~ li {
+  margin-top: 1rem;
+}
+
+ul ~ ul {
+  margin-top: 3rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.small-text {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.big-text {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.icon {
+  height: 20px;
+}
+
+.avatar-small {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.avatar-mid {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+  background-color: var(--clr-blue);
+  padding-inline: 1rem;
+  padding-block-start: 1rem;
+  grid-row: 1 / span 2;
+  color: var(--clr-white);
+}
+
+.sidebar a {
+  color: var(--clr-white);
+}
+
+.sidebar .flex {
+  gap: 15px;
+}
+
+.header {
+  background-color: var(--clr-white);
+  grid-column: 2 / -1;
+}
+
+.main {
+  background-color: var(--clr-grey-1);
+  grid-column: 2 / -1;
+}
+
+.logo {
+  margin-block-end: 3rem;
+}
+
+.header-nav,
+.header-info {
+  justify-content: space-between;
+  padding: 1rem 3rem 1rem 2rem;
+}
+
+.search-bar {
+  gap: 1rem;
+  flex: 0.7;
+}
+
+.search-bar input {
+  border: none;
+  background-color: var(--clr-grey-1);
+  border-radius: 10px;
+  height: 25px;
+  width: 100%;
+}
+
+.notification {
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.user-info .flex {
+  gap: 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--clr-blue);
+  border: none;
+  border-radius: 10rem;
+  padding: 0.7rem 2rem;
+  color: var(--clr-white);
+  font-weight: bold;
+}
