@@ -148,3 +148,76 @@ ul ~ ul {
   color: var(--clr-white);
   font-weight: bold;
 }
+
+.main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(2, 21rem);
+  padding: 1rem 1rem;
+  gap: 2rem 1rem;
+}
+
+.main h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.projects {
+  grid-row: 1 / span 2;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border-left: 5px solid var(--clr-orange);
+  border-radius: 5px;
+  background-color: var(--clr-white);
+  padding: 2rem 1rem;
+}
+
+.card p {
+  width: 35ch;
+  margin-block: 0.5rem 1rem;
+}
+
+.card-icons {
+  text-align: right;
+  align-items: baseline;
+  justify-content: end;
+}
+
+.announcement-cards {
+  background-color: var(--clr-white);
+  padding: 1.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px #cfd4db;
+}
+
+.announcement-cards h3 {
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+
+.announcement-cards p {
+  font-size: 0.8rem;
+  color: var(--clr-grey-2);
+}
+
+hr {
+  margin-block: 1rem;
+  border: 1px solid #e1e1e1;
+}
+
+.trending-accounts {
+  background-color: var(--clr-white);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.trending-accounts .flex {
+  gap: 1rem;
+}
